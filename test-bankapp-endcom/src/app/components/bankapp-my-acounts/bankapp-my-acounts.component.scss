@@ -1,0 +1,70 @@
+.title {
+    margin: 2% 1%;
+    color: #c2d0d0;
+    font-size: 80%;
+}
+.acounts{
+    color: white;
+}
+
+.card {
+    background: #0fbd94;
+    border-radius: 5px;
+    padding-left: 4%;
+    height: 110px;
+}
+
+.head {
+    display: flex;
+    font-size: 80%;
+}
+
+.cash {
+    position: relative;
+    left: 70%;
+}
+.state {
+    padding: 4% 0 0 0;
+    font-weight: 100;
+}
+p{
+    margin: 0;
+}
+
+.cardNumber{
+    font-size: 80%;
+}
+
+.cardUser{
+    font-size: 70%;
+}
+
+.cardHeadLine {
+    font-size: 70%;
+}
+
+.newCard {
+    border: solid 3px #a0d3ca;
+    color: #a0d3ca;
+    padding: 2% 0 3% 0;
+    display: flex;
+    margin: 3% 0;
+}
+
+.cardSec{
+    background: #a0d3ca;
+    border-radius: 5px;
+    padding-left: 4%;
+    height: 110px;
+}
+
+.icon{
+    position: relative;
+    padding-top: 1%;
+    font-size: 30px;
+    left: 40%;
+}
+
+.new {
+    padding: 3% 0 2% 2%;
+}

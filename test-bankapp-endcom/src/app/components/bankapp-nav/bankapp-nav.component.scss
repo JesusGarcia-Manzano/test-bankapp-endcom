@@ -1,0 +1,56 @@
+.icon {
+    color: #0fbd94;
+    font-size: 35px;
+    position: relative;
+    bottom: 50%;
+}
+
+.row{
+    margin: 0;
+}
+
+.logo{
+    display: flex;
+    padding: 2% 0;
+    margin: 0;
+}
+
+.navigate {
+    padding-left: 4%;
+    margin: 0;
+}
+strong {
+    color: #0fbd94;
+    font-size: 150%;
+}
+.title{
+    color: #c2d0d0;
+    margin-left: 5%;
+    padding: 2% 0 0 0;
+}
+.options {
+    padding: 3% 0;
+    margin: 0;
+    color:  #c2d0d0;
+    cursor: pointer;
+    font-weight: 900;
+    border: none;
+    background-color: white;
+}
+.options:focus {
+        background: #c2d0d0;
+        color: #0fbd94;
+        font-weight: 900;
+}
+.pClient {
+    margin: 0;
+    color: #c2d0d0;
+    position: relative;
+    left: 40%;
+}
+.cli {
+    font-weight: 900;
+}
+.client{
+    padding: 2% 0;
+}
