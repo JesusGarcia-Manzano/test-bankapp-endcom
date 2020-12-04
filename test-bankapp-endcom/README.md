@@ -25,3 +25,12 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## instalaciones
+
+se requiere instalar angular material y materialize para estilos y flexbox
+angular material: ng add @angular/material
+materialize: npm install materialize-css@next
+
+una vez instalado en el angular.JSON, en el apartado de los style (linea 30 suele ser) agregar la siguiente linea para poder usar materialize:
+"./node_modules/materialize-css/dist/css/materialize.min.css"
