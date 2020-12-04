@@ -1,25 +1,27 @@
 <div class="modalAlert" *ngIf="receiveBool">
-    <div class="modalHead">
-        <div class="head">
-            <mat-icon class="icon">trip_origin</mat-icon>
-            <p class="title"><strong> Bankapp </strong></p>
+    <form [formGroup]="form" (ngSubmit)="saveCard($event)">
+        <div class="modalHead">
+            <div class="head">
+                <mat-icon class="icon">trip_origin</mat-icon>
+                <p class="title"><strong> Bankapp </strong></p>
+            </div>
+            <p class="subtitle"> Agregar Tarjeta <button (click)="changeBool()">x</button></p>
         </div>
-        <p class="subtitle"> Agregar Tarjeta <button (click)="changeBool()">x</button></p>
-    </div>
-    <div class="row">
-        <input class="col s12 m12" placeholder="  Número de tarjeta" type="text">
-        <div class="inputContent">
-            <input class="col s12 m6" placeholder="  Cuenta" type="text">
-            <input class="col s12 m6" placeholder="  Issuer" type="text">
+        <div class="row">
+                <input formControlName="numeroTarjeta" class="col s12 m12" placeholder="  Número de tarjeta" type="text">
+                <div class="inputContent">
+                    <input formControlName="cuenta" class="col s12 m6" placeholder="  Cuenta" type="text">
+                    <input formControlName="issues" class="col s12 m6" placeholder="  Issues" type="text">
+                </div>
+                <input formControlName="nombreTarjeta" class="col s12 m12" placeholder="  Nombre de tarjeta" type="text">
+                <input formControlName="marca" class="col s12 m12" placeholder="  Marca" type="text">
+                <input formControlName="estatus" class="col s12 m12" placeholder="  Estatus" type="text">
+                <input formControlName="saldo" class="col s12 m12" placeholder="  Saldo" type="text">
+                <input formControlName="tipoCuenta" class="col s12 m12" placeholder="  Tipo de Cuenta" type="text">
         </div>
-        <input class="col s12 m12" placeholder="  Nombre de tarjeta" type="text">
-        <input class="col s12 m12" placeholder="  Marca" type="text">
-        <input class="col s12 m12" placeholder="  Estatus" type="text">
-        <input class="col s12 m12" placeholder="  Saldo" type="text">
-        <input class="col s12 m12" placeholder="  Tipo de Cuenta" type="text">
-    </div>
-    <div>
-        <button (click)="changeBool()" class="cancel">Cancelar</button>
-        <button class="add">Agregar Tarjeta</button>
-    </div>
+        <div>
+            <button (click)="changeBool()" class="cancel">Cancelar</button>
+            <button class="add" type="submit">Agregar Tarjeta</button>
+        </div>
+    </form>
 </div>
