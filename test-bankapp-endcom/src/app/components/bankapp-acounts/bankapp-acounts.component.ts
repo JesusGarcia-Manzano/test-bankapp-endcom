@@ -9,7 +9,12 @@ export class BankappAcountsComponent implements OnInit {
 
   constructor() { }
 
+  valBoolean: boolean;
+
   ngOnInit(): void {
   }
 
+  receive(val: boolean) {
+    this.valBoolean = val;
+  }
 }

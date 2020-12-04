@@ -1,14 +1,14 @@
-<div class="balance row">
+<div class="balance row" *ngFor="let b of balance">
     <div class="card col s12 m3">
         <p class="title">SALDO GENERAL EN CUENTAS</p>
-        <p class="price pri">{{2000 | currency}}</p>
+        <p class="price pri">{{b.saldoGeneral | currency}}</p>
     </div>
     <div class="card col s12 m3">
         <p class="title">TOTAL DE INGRESOS</p>
-        <p class="price">{{8000 | currency}}</p>
+        <p class="price">{{b.ingresos | currency}}</p>
     </div>
     <div class="card col s12 m3">
         <p class="title">TOTAL DE GASTOS</p>
-        <p class="price">{{6000 | currency}}</p>
+        <p class="price">{{b.gastos | currency}}</p>
     </div>
 </div>

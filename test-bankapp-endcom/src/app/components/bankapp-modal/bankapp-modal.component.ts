@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-bankapp-modal',
@@ -6,8 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./bankapp-modal.component.scss']
 })
 export class BankappModalComponent implements OnInit {
+  @Input() receiveBool: boolean
 
-  constructor() { }
+  constructor() {  }
+
+  changeBool() {
+    this.receiveBool = false;
+  }
 
   ngOnInit(): void {
   }

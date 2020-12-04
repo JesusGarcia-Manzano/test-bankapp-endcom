@@ -6,61 +6,10 @@
             <div class="col s12 m8">Descripción</div>
             <div class="col s12 m2">Monto</div>
         </div>
-        <div class="col s12 m12 tableData">
-            <div class="col s12 m2 data">10/06/2019</div>
-            <div class="col s12 m8 data">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus consequuntur esse saepe, </div>
-            <div class="col s12 m2 data curren">{{600 | currency}}</div>
+        <div class="col s12 m12 tableData" *ngFor="let m of movements">
+            <div class="col s12 m2 data">{{m.fecha}}</div>
+            <div class="col s12 m8 data">{{m.descripcion}}</div>
+            <div class="col s12 m2 data curren" [ngClass]="m.tipo === 'abono' ? 'data' : 'dataError'">{{m.monto}}</div>
         </div>
-        <div class="col s12 m12 tableData">
-            <div class="col s12 m2 data">10/06/2019</div>
-            <div class="col s12 m8 data">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus consequuntur esse saepe, </div>
-            <div class="col s12 m2 data curren">{{600 | currency}}</div>
-        </div>
-        <div class="col s12 m12 tableData">
-            <div class="col s12 m2 data">10/06/2019</div>
-            <div class="col s12 m8 data">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus consequuntur esse saepe, </div>
-            <div class="col s12 m2 data curren">{{600 | currency}}</div>
-        </div>
-        <div class="col s12 m12 tableData">
-            <div class="col s12 m2 data">10/06/2019</div>
-            <div class="col s12 m8 data">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus consequuntur esse saepe, </div>
-            <div class="col s12 m2 data curren">{{600 | currency}}</div>
-        </div>
-        <div class="col s12 m12 tableData">
-            <div class="col s12 m2 data">10/06/2019</div>
-            <div class="col s12 m8 data">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus consequuntur esse saepe, </div>
-            <div class="col s12 m2 data curren">{{600 | currency}}</div>
-        </div>
-        <div class="col s12 m12 tableData">
-            <div class="col s12 m2 data">10/06/2019</div>
-            <div class="col s12 m8 data">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus consequuntur esse saepe, </div>
-            <div class="col s12 m2 data curren">{{600 | currency}}</div>
-        </div>
-        <div class="col s12 m12 tableData">
-            <div class="col s12 m2 data">10/06/2019</div>
-            <div class="col s12 m8 data">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus consequuntur esse saepe, </div>
-            <div class="col s12 m2 data curren">{{600 | currency}}</div>
-        </div>
-        <div class="col s12 m12 tableData">
-            <div class="col s12 m2 data">10/06/2019</div>
-            <div class="col s12 m8 data">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus consequuntur esse saepe, </div>
-            <div class="col s12 m2 data curren">{{600 | currency}}</div>
-        </div>
-        <div class="col s12 m12 tableData">
-            <div class="col s12 m2 data">10/06/2019</div>
-            <div class="col s12 m8 data">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus consequuntur esse saepe, </div>
-            <div class="col s12 m2 data curren">{{600 | currency}}</div>
-        </div>
-        <div class="col s12 m12 tableData">
-            <div class="col s12 m2 data">10/06/2019</div>
-            <div class="col s12 m8 data">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus consequuntur esse saepe, </div>
-            <div class="col s12 m2 data curren">{{600 | currency}}</div>
-        </div>
-        <div class="col s12 m12 tableData">
-            <div class="col s12 m2 data">10/06/2019</div>
-            <div class="col s12 m8 data">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus consequuntur esse saepe, </div>
-            <div class="col s12 m2 data curren">{{600 | currency}}</div>
-        </div>
-        
     </div>
 </div>

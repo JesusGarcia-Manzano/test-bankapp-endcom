@@ -1,24 +1,17 @@
   <div class="acounts">
     <p class="title">MIS CUENTAS</p>
-    <div class="card">
-        <div class="head">
-            <p class="state">activa</p>
-            <p class="cash">{{1500 | currency}}</p>
+    <div *ngFor="let c of account">
+        <div [ngClass]="c.estado === 'activa' ? 'card' : 'cardInva'">
+            <div class="head">
+                <p class="state">{{c.estado}}</p>
+                <p class="cash">{{c.saldo | currency}}</p>
+            </div>
+            <p class="cardNumber"> {{c.tarjeta}} </p>
+            <p class="cardUser">{{c.nombre}}</p>
+            <p class="cardHeadLine">{{c.tipo}}</p>
         </div>
-        <p class="cardNumber"> 1589 - 5825 - 6824 - 5842 </p>
-        <p class="cardUser">Ulises Sandoval Carbajal</p>
-        <p class="cardHeadLine">Titular</p>
     </div>
-    <div class="cardSec">
-        <div class="head">
-            <p class="state">activa</p>
-            <p class="cash">{{1500 | currency}}</p>
-        </div>
-        <p class="cardNumber"> 1589 - 5825 - 6824 - 5842 </p>
-        <p class="cardUser">Ulises Sandoval Carbajal</p>
-        <p class="cardHeadLine">Titular</p>
-    </div>
-    <div class="newCard"> 
+    <div (click)="valueBoolean(true)" class="newCard"> 
         <p class="new">AGREGAR TARJETA</p>  
         <mat-icon class="icon">add_circle_outline</mat-icon> 
     </div>

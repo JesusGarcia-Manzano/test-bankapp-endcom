@@ -56,6 +56,7 @@ input[type=text]:focus {
     width: 45%;
     margin: 0 2%;
     color: white;
+    cursor: pointer;
 }
 
 .add {
@@ -65,6 +66,7 @@ input[type=text]:focus {
     width: 45%;
     margin: 0 2%;
     color: white;
+    cursor: pointer;
 }
 
 .row .col.m6{
@@ -74,3 +76,7 @@ input[type=text]:focus {
 .inputContent {
     display: block;
 }
+ button {
+     background: white;
+     border: none;
+ }

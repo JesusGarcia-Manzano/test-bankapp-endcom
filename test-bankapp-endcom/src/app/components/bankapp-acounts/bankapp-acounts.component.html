@@ -1,8 +1,11 @@
 <div class=" acounts row">
     <div class="col s12 m4">
-        <app-bankapp-my-acounts></app-bankapp-my-acounts>
+        <app-bankapp-my-acounts (sendBoolean)="receive($event)"></app-bankapp-my-acounts>
     </div>
     <div class="col s12 m8">
         <app-bankapp-movements></app-bankapp-movements>
+    </div>
+    <div class="modalAlert">
+        <app-bankapp-modal [receiveBool]="valBoolean"></app-bankapp-modal>
     </div>
 </div>

@@ -1,10 +1,10 @@
-<div class="modalAlert">
+<div class="modalAlert" *ngIf="receiveBool">
     <div class="modalHead">
         <div class="head">
             <mat-icon class="icon">trip_origin</mat-icon>
             <p class="title"><strong> Bankapp </strong></p>
         </div>
-        <p class="subtitle"> Agregar Tarjeta </p>
+        <p class="subtitle"> Agregar Tarjeta <button (click)="changeBool()">x</button></p>
     </div>
     <div class="row">
         <input class="col s12 m12" placeholder="  Número de tarjeta" type="text">
@@ -19,7 +19,7 @@
         <input class="col s12 m12" placeholder="  Tipo de Cuenta" type="text">
     </div>
     <div>
-        <button class="cancel">Cancelar</button>
+        <button (click)="changeBool()" class="cancel">Cancelar</button>
         <button class="add">Agregar Tarjeta</button>
     </div>
 </div>

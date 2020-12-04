@@ -6,9 +6,9 @@
         </div>
         <button class="col s12 m2 options">MIS CUENTAS</button>
         <button class="col s12 m2 options">ENVIAR DINERO</button>
-        <div class="col s12 m4 client">
-            <p class="pClient cli"> Octavio martinez</p>
-            <p class="pClient">Ultimo inicio 05/74/1021</p>
+        <div class="col s12 m4 client" *ngFor="let a of account">
+            <p class="pClient cli"> {{a.nombre}}</p>
+            <p class="pClient"> Ultimo inicio {{ a.ultimaSesion}}</p>
         </div>
     </div>
 </div>

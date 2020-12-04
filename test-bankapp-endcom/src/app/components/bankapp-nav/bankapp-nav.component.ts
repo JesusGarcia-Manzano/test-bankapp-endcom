@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AccountService } from './../../services/account/account.service';
+import { Account } from './../../interfaces/account.model';
 
 @Component({
   selector: 'app-bankapp-nav',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BankappNavComponent implements OnInit {
 
-  constructor() { }
+  constructor(private accountService: AccountService) { }
+  account: Account[] = []
 
   ngOnInit(): void {
+    this.getAccount();
+  }
+
+  getAccount() {
+    this.accountService.getAccount()
+      .subscribe((accounts) => {
+        this.account = accounts.cuenta;
+      })
   }
 
 }

@@ -12,6 +12,8 @@ import { BankappMyAcountsComponent } from './components/bankapp-my-acounts/banka
 import { BankappMovementsComponent } from './components/bankapp-movements/bankapp-movements.component';
 import { BankappAcountsComponent } from './components/bankapp-acounts/bankapp-acounts.component';
 import { BankappModalComponent } from './components/bankapp-modal/bankapp-modal.component';
+import { HttpClientModule } from '@angular/common/http';
+import { BankappFooterComponent } from './components/bankapp-footer/bankapp-footer.component';
 
 @NgModule({
   declarations: [
@@ -22,13 +24,15 @@ import { BankappModalComponent } from './components/bankapp-modal/bankapp-modal.
     BankappMyAcountsComponent,
     BankappMovementsComponent,
     BankappAcountsComponent,
-    BankappModalComponent
+    BankappModalComponent,
+    BankappFooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
+    HttpClientModule
     
   ],
   providers: [],
