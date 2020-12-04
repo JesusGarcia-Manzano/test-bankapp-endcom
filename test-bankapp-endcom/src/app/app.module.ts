@@ -11,6 +11,7 @@ import { BankappBalanceComponent } from './components/bankapp-balance/bankapp-ba
 import { BankappMyAcountsComponent } from './components/bankapp-my-acounts/bankapp-my-acounts.component';
 import { BankappMovementsComponent } from './components/bankapp-movements/bankapp-movements.component';
 import { BankappAcountsComponent } from './components/bankapp-acounts/bankapp-acounts.component';
+import { BankappModalComponent } from './components/bankapp-modal/bankapp-modal.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { BankappAcountsComponent } from './components/bankapp-acounts/bankapp-ac
     BankappBalanceComponent,
     BankappMyAcountsComponent,
     BankappMovementsComponent,
-    BankappAcountsComponent
+    BankappAcountsComponent,
+    BankappModalComponent
   ],
   imports: [
     BrowserModule,

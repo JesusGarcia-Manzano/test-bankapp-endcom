@@ -1,0 +1,76 @@
+.modalAlert {
+    background-color: white;
+    padding: 2% 6%;
+    width: 80%;
+    box-shadow:0px 0px 300px 1px #000000;
+    -moz-box-shadow:0px 0px 300px 1px #000000;
+    -webkit-box-shadow:0px 0px 300px 1px #000000;
+}
+.title{
+    color: #c2d0d0;
+    margin-left: 10%;
+    padding: 5% 0 0 0;
+}
+
+.subtitle {
+    position: relative;
+    left: 50%;
+    color: #acacac;
+}
+
+.head {
+    display: flex;
+}
+
+.icon {
+    color: #0fbd94;
+    font-size: 35px;
+}
+strong {
+    color: #0fbd94;
+    font-size: 150%;
+}
+
+.modalHead {
+    display: flex;
+    padding: 2% 0;
+    margin: 0;
+}
+
+input[type=text] {
+    color: #f4f3f3;
+    border: solid 2px #f4f3f3;
+    margin: 2%;
+}
+
+
+input[type=text]:focus {
+    color: #0fbd94;
+    border: solid 2px #0fbd94;
+}
+
+.cancel {
+    background-color: #f0f8f8da;
+    border: none;
+    padding: 3% 10%;
+    width: 45%;
+    margin: 0 2%;
+    color: white;
+}
+
+.add {
+    background-color: #09b48c;
+    border: none;
+    padding: 3% 10%;
+    width: 45%;
+    margin: 0 2%;
+    color: white;
+}
+
+.row .col.m6{
+    width: 46%;
+    margin-left: 1%;
+}
+.inputContent {
+    display: block;
+}
